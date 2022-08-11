@@ -1,7 +1,9 @@
-jobs:
-- job: ${{ parameters.name }}_Windows
-  pool:
-    vmImage: 'ubuntu-latest'
-  steps:
-  - script: |
-    echo "Hello from 'a'"
+stages:
+- stage: Build 
+  jobs:
+  - job: ${{ parameters.name }}_Windows
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - script: |
+      echo "Hello from 'a'"
