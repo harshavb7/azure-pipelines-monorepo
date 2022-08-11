@@ -11,6 +11,7 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
-  - script: |
-      echo "Hello from '/' root folder."
+stages:
+  - template: service-a/azure-pipelines-a.yml
+  
+  - template: service-b/azure-pipelines-b.yml
