@@ -1,5 +1,6 @@
 parameters:  
   name: BDefault
+  workingdir: 'service-b/'
 
 
 stages:
@@ -7,10 +8,10 @@ stages:
   jobs:
   - job: TEST_JOB_${{ parameters.name }}
     steps:
-    - script: echo "Hello from 'service-b'"
+    - script: echo "Hello from service-b"
 
     - script: npm install
-      workingDirectory: ${{ parameters.working-dir }}
+      workingDirectory: ${{ parameters.workingdir }}
 
     - script: npm run chalk
-      workingDirectory: ${{ parameters.working-dir }}
+      workingDirectory: ${{ parameters.workingdir }}
