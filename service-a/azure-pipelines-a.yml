@@ -6,7 +6,7 @@ parameters:
 stages:
 - stage: Build  
   jobs:
-  - job: TEST JOB_${{ parameters.name }}
+  - job: TEST_JOB_${{ parameters.name }}
  
     steps:
     - script: |
