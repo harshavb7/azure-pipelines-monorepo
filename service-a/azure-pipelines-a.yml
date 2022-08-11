@@ -10,4 +10,4 @@ stages:
  
     steps:
     - script: |
-    echo "Hello from A"
+        echo "Hello from A"
