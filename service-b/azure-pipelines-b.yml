@@ -1,9 +1,6 @@
 parameters:  
   name: BDefault
 
-variables:
-  - name: working-dir
-    value: 'service-b/'
 
 stages:
 - stage: Build  
@@ -13,7 +10,7 @@ stages:
     - script: echo "Hello from 'service-b'"
 
     - script: npm install
-      workingDirectory: $(working-dir)
+      workingDirectory: ${{ parameters.working-dir }}
 
     - script: npm run chalk
-      workingDirectory: $(working-dir)
+      workingDirectory: ${{ parameters.working-dir }}
