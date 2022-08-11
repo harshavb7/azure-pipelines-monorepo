@@ -14,4 +14,4 @@ pool:
 stages:
   - template: service-a/azure-pipelines-a.yml
     parameters:
-    name: Mini
+      name: Mini
