@@ -1,14 +1,5 @@
 # Build numbering format
-name: $(BuildID)
-
-trigger:
-  branches:
-    include:
-      - master
-      - feat/*
-  paths:
-    include:
-      - 'service-a/*'
+name: 'Service A Build'
 
 pool:
   vmImage: 'ubuntu-latest'
