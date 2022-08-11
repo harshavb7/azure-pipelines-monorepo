@@ -1,9 +1,7 @@
-# Build numbering format
-name: 'Service A Build'
-
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
+jobs:
+- job: ${{ parameters.name }}_Windows
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
   - script: |
-      echo "Hello from 'a'"
+    echo "Hello from 'a'"
