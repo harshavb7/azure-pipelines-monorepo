@@ -4,7 +4,7 @@ parameters:
 
 
 stages:
-- stage: Build Service 2 
+- stage: Build_Service_B 
   jobs:
   - job: TEST_JOB_${{ parameters.name }}
     steps:
