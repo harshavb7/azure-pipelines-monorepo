@@ -12,6 +12,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-  - template: service-a/azure-pipelines-a.yml
-    parameters:
-      name: Mini
+
+
+- template: service-a/azure-pipelines-a.yml
+  parameters:
+    name: test
