@@ -17,3 +17,6 @@ stages:
 - template: service-a/azure-pipelines-a.yml
   parameters:
     name: test
+- template: service-b/azure-pipelines-b.yml
+  parameters:
+    name: Btest
