@@ -11,3 +11,4 @@ stages:
     steps:
     - script: |
         echo "Hello from A"
+    displayName: 'set node version to'
