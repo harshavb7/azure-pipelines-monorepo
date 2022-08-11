@@ -20,4 +20,4 @@ stages:
 - template: service-b/azure-pipelines-b.yml
   parameters:
     name: Btest
-    working-dir: 'service-b/'
+    workingdir: 'service-b/'
