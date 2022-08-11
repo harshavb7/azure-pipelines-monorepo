@@ -15,3 +15,6 @@ stages:
 
     - script: npm run chalk
       workingDirectory: ${{ parameters.workingdir }}
+    
+    - script: pwd
+      workingDirectory: ${{ parameters.workingdir }}
