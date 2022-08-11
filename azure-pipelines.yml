@@ -6,10 +6,7 @@ trigger:
     include:
       - master
       - feat/*
-  paths:
-    exclude:
-      - 'service-a/*'
-      - 'service-b/*'
+
 
 pool:
   vmImage: 'ubuntu-latest'
