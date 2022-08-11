@@ -1,5 +1,13 @@
 # Build numbering format
-name: $(BuildID)
+
+variables:
+  - name: Major
+    value: 1
+  - name: Patch
+    value: $[counter(format('{0}.{1}',variables['Major'],variables['Minor']),0)]
+
+name: $(Major).$(Patch)
+
 
 trigger:
   branches:
