@@ -12,6 +12,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-  - template: service-a/azure-pipelines-a.yml
-  
-  - template: service-b/azure-pipelines-b.yml
+  - stage: Build A
+    - template: service-a/azure-pipelines-a.yml
+  - stage: Build B
+    - template: service-b/azure-pipelines-b.yml
