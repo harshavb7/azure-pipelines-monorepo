@@ -1,9 +1,13 @@
+parameters:  
+  name: Default
+
+
+
 stages:
-- stage: Build 
+- stage: Build  
   jobs:
-  - job: ${{ parameters.name }}_Windows
-    pool:
-      vmImage: 'ubuntu-latest'
+  - job: TEST JOB_${{ parameters.name }}
+ 
     steps:
     - script: |
-      echo "Hello from 'a'"
+    echo "Hello from A"
